@@ -1,1 +1,3 @@
-import './base.js'
+import './base.js';
+import './markup.js'
+
