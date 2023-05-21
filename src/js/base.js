@@ -16,7 +16,7 @@ loadMoreButton.addEventListener("click", loadMore);
 
 function clickSearch(event) {
     event.preventDefault();
-    const value = dataInput.value; 
+    const value = dataInput.value.trim(); 
     if (value === "") {
         clear();
         newAPI.messageEmptyRecvest()
