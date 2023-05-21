@@ -25,6 +25,7 @@ paintMarkup({
     downloads
 }) {
         return `
+        <a href="${largeImageURL}">
         <div class="photo-card">
             <div class="photo-conteiner">
             <img src="${webformatURL}" alt="${tags}" loading="lazy" />
@@ -48,6 +49,7 @@ paintMarkup({
             </p>
             </div>
         </div>
+        </a>
         `
     }
 
