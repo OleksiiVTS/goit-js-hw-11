@@ -26,7 +26,7 @@ async function loadMore() {
     await newAPI.getReqest()
         .then(data => markupCallFunction(data))
         .catch(Error);
-    slouSkroll();
+        slowScroll();
 };
 
 async function startSearch(){
@@ -65,7 +65,7 @@ function clear() {
     checkLoadMoreButton();
 }
 
-function slouSkroll() {
+function slowScroll() {
     const dir = document
     .querySelector(".gallery")
     .firstElementChild.getBoundingClientRect();
