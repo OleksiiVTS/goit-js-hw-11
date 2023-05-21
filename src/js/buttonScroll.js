@@ -6,9 +6,10 @@ function changeContent() {
         buttonScroll.textContent = "Scroll disable"
         // window.removeEventListener("scroll", scrollLoadMore);
         return
-    } buttonScroll.textContent = "Scroll enable" 
+    } else {
+        buttonScroll.textContent = "Scroll enable" 
+    } 
 }
-
 
 
 //! Infinite scroll

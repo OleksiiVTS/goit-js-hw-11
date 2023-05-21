@@ -81,10 +81,10 @@ function slowScroll() {
 }
 
 function checkScroll() {
-    console.dir(buttonScroll)
     if (buttonScroll.textContent === "Scroll enable") {
-        window.addEventListener("scroll", scrollLoadMore);  
-    } return
+        window.addEventListener("scroll", scrollLoadMore);
+        return  
+    } window.removeEventListener("scroll", scrollLoadMore); 
 }
 
 function scrollLoadMore() {
