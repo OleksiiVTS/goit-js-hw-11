@@ -26,6 +26,7 @@ export default class API {
         this.messageInfoRecvest(data.totalHits)
         if (data.totalHits === 0) {
             this.messageEmptyRecvest()
+            return
         }
         if (data.hits.length >= quantityPage) {
             this.incrementPage();
