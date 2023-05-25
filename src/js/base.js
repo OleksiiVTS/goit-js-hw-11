@@ -5,7 +5,7 @@ import API from './search';
 import Markup from './markup';
 const newAPI = new API();
 const newMarkup = new Markup();
-var galleryS = $('.gallery a').SimpleLightbox();
+
 const form = document.getElementById("search-form");
 const dataInput = form.elements.searchQuery;
 const buttonScroll = form.elements.buttonScroll;
@@ -43,14 +43,15 @@ function markupCallFunction (data) {
     newMarkup.dataMarkup = data;
     newMarkup.getNewsList();
     checkLoadMoreButton();
-    
+    var galleryS = $('.gallery a').SimpleLightbox();
+    galleryS.refresh();
     new SimpleLightbox('.gallery a', { 
         captionsData:'alt',
         captionPosition: 'bottom',
         captionDelay: 250,
     });
-
-    galleryS.refresh();
+    // var galleryS = $('.gallery a').SimpleLightbox();
+    // galleryS.refresh();
 }
 
 function checkLoadMoreButton() {
