@@ -7,7 +7,7 @@ function changeContent() {
         // window.removeEventListener("scroll", scrollLoadMore);
         return
     } else {
-        buttonScroll.textContent = "Scroll enable" 
+        buttonScroll.textContent = "Scroll enable";
     } 
 }
 
