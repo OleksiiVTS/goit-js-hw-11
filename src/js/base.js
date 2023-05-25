@@ -6,7 +6,6 @@ import Markup from './markup';
 const newAPI = new API();
 const newMarkup = new Markup();
 let gallery = new SimpleLightbox('.gallery a', { 
-    // Options //
     captionsData:'alt',
     captionPosition: 'bottom',
     captionDelay: 250,
